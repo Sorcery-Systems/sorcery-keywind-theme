@@ -9,4 +9,4 @@ node_modules/
 # misc
 .DS_Store
 
-theme/sorcery-keywind/login/resources/dist
+**/dist
