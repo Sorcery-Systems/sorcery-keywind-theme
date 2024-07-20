@@ -19,9 +19,11 @@
   showAnotherWayIfPresent=true
 >
   <#assign cardHeader>
-    <@logo.kw>
-      <img src="${url.resourcesPath}/img/emeis-logo.png" alt="Emeis logo" class="w-2/3">
-    </@logo.kw>
+    <#if properties.logo??>
+      <@logo.kw>
+        <img src="${url.resourcesPath}/${properties.logo}" alt="Logo" class="w-2/3">
+      </@logo.kw>
+    </#if>
     <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>
       <@heading.kw>
         <#nested "header">
