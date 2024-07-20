@@ -20,7 +20,7 @@
 >
   <#assign cardHeader>
     <@logo.kw>
-      ${kcSanitize(msg("loginTitleHtml", (realm.displayNameHtml!"")))?no_esc}
+      <img src="${url.resourcesPath}/img/emeis-logo.png" alt="Emeis logo" class="w-2/3">
     </@logo.kw>
     <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>
       <@heading.kw>
