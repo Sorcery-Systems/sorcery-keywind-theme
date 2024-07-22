@@ -21,7 +21,7 @@
   <#assign cardHeader>
     <#if properties.logo??>
       <@logo.kw>
-        <img src="${url.resourcesPath}/${properties.logo}" alt="Logo" class="w-2/3">
+        <img src="${url.resourcesPath}/${properties.logo}" alt="Logo" class="w-1/3">
       </@logo.kw>
     </#if>
     <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>

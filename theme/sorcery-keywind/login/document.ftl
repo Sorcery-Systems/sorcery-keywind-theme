@@ -1,5 +1,5 @@
 <#macro kw script="">
-  <title>${msg("loginTitle", (realm.displayName!""))}</title>
+  <title>${msg("loginTitle", (client.name!""))}</title>
 
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">

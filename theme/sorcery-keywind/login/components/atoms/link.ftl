@@ -5,6 +5,12 @@
       <#break>
     <#case "secondary">
       <#assign colorClass="text-secondary-600 hover:text-secondary-900">
+      <#break>  
+    <#case "secondary-light">
+      <#assign colorClass="text-secondary-600 hover:text-secondary-900">
+      <#break>
+    <#case "secondary-dark">
+      <#assign colorClass="text-secondary-300 hover:text-secondary-100">
       <#break>
     <#default>
       <#assign colorClass="text-primary-600 hover:text-primary-500">

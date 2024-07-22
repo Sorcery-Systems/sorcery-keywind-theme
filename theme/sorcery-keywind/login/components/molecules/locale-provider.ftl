@@ -3,7 +3,7 @@
 
 <#macro kw currentLocale="" locales=[]>
   <div class="relative" x-data="{ open: false }">
-    <@link.kw @click="open = true" color="secondary" component="button" type="button">
+    <@link.kw @click="open = true" color="secondary-${properties.theme}" component="button" type="button">
       <div class="flex items-center">
         <span class="mr-1 text-sm">${currentLocale}</span>
         <@icon.kw />
