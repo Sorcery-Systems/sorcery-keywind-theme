@@ -7,7 +7,7 @@
     <link href="../../theme/sorcery-keywind/login/resources/dist/index.css" rel="stylesheet">
     <script defer src="../../theme/sorcery-keywind/login/resources/dist/index.ts" type="module"></script>
   </head>
-  <body class="bg-secondary-900 flex flex-col items-center justify-center min-h-screen sm:py-16">
+  <body class="bg-secondaryDarker flex flex-col items-center justify-center min-h-screen sm:py-16">
     <div class="max-w-md space-y-6 w-full">
       <div class="bg-white p-8 rounded-lg space-y-6">
         <div class="space-y-4">
@@ -24,7 +24,7 @@
             <form class="m-0 space-y-4" method="post" action="loginAction" x-ref="selectCredentialForm">
               <input name="authenticationExecution" type="hidden" x-ref="authExecInput">
               <div>
-                <button class="text-primary-600 hover:text-primary-500 inline-flex" @click="$refs.authExecInput.value = 'authExecId'; $refs.selectCredentialForm.submit()" type="button"> Security Key </button>
+                <button class="text-primary hover:text-primaryLighter inline-flex" @click="$refs.authExecInput.value = 'authExecId'; $refs.selectCredentialForm.submit()" type="button"> Security Key </button>
                 <div class="text-sm">
                   Use your security key to sign in.
                 </div>
@@ -32,13 +32,13 @@
             </form>
           </div>
           <form action="loginAction" method="post">
-            <input name="tryAnotherWay" type="hidden" value="on"> <button class="bg-secondary-100 text-secondary-600 focus:ring-secondary-600 hover:bg-secondary-200 hover:text-secondary-900 px-4 py-2 text-sm flex justify-center relative rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-offset-2" type="submit"> Try Another Way </button>
+            <input name="tryAnotherWay" type="hidden" value="on"> <button class="bg-secondaryVeryLight text-secondary focus:ring-secondary hover:bg-secondaryVeryLight hover:text-secondaryDarker px-4 py-2 text-sm flex justify-center relative rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-offset-2" type="submit"> Try Another Way </button>
           </form>
         </div>
       </div>
       <div class="flex justify-around">
         <div class="relative" x-data="{ open: false }">
-          <button class="text-secondary-600 hover:text-secondary-900 inline-flex" @click="open = true" type="button">
+          <button class="text-secondary hover:text-secondaryDarker inline-flex" @click="open = true" type="button">
             <div class="flex items-center">
               <span class="mr-1 text-sm">English</span>
               <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -47,10 +47,10 @@
             </div></button>
           <div @click.away="open = false" class="absolute bg-white bottom-0 -left-4 max-h-80 mb-6 overflow-y-scroll rounded-lg shadow-lg" x-cloak x-show="open">
             <div class="px-4 py-2">
-              <a class="text-secondary-600 hover:text-secondary-900 text-sm inline-flex" href="url"> Deutsch </a>
+              <a class="text-secondary hover:text-secondaryDarker text-sm inline-flex" href="url"> Deutsch </a>
             </div>
             <div class="px-4 py-2">
-              <a class="text-secondary-600 hover:text-secondary-900 text-sm inline-flex" href="url"> Français </a>
+              <a class="text-secondary hover:text-secondaryDarker text-sm inline-flex" href="url"> Français </a>
             </div>
           </div>
         </div>

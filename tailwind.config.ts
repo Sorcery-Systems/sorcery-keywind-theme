@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import colors from 'tailwindcss/colors';
 
 export default {
   content: ['./theme/**/*.ftl'],
@@ -8,34 +7,20 @@ export default {
   },
   plugins: [require('@tailwindcss/forms')],
   theme: {
+    fontFamily: {
+      main: 'var(--fontName), sans-serif'
+    },
     extend: {
       colors: {
-        primary: {
-          50: '#fbd4a7',          
-          100: '#f9c489',          
-          200: '#f8b46c',          
-          300: '#f5a44f',          
-          400: '#f39230',          
-          500: '#F28300',          
-          600: '#e27200',          
-          700: '#d46300',          
-          800: '#c55500',          
-          900: '#b74800',          
-          950: '#a83a00'          
-        },
-        secondary: {
-          50: '#fbf0ff',
-          100: '#e5d6e9',
-          200: '#cfbcd4',
-          300: '#b9a2bf',
-          400: '#a48aaa',
-          500: '#907195',
-          600: '#7c5a81',
-          700: '#69436d',
-          800: '#562d59',
-          900: '#411644',
-          950: '#431646'
-        },
+        primary: 'rgb(var(--color-primary) / <alpha-value>)',
+        primaryVeryLight: 'rgb(var(--color-primaryVeryLight) / <alpha-value>)',
+        primaryDarker: 'rgb(var(--color-primaryDarker) / <alpha-value>)',
+        primaryLighter: 'rgb(var(--color-primaryLighter) / <alpha-value>)', 
+        
+        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+        secondaryVeryLight: 'rgb(var(--color-secondaryVeryLight) / <alpha-value>)',
+        secondaryDarker: 'rgb(var(--color-secondaryDarker) / <alpha-value>)',
+        secondaryLighter: 'rgb(var(--color-secondaryLighter) / <alpha-value>)',
 
         provider: {
           apple: '#000000',

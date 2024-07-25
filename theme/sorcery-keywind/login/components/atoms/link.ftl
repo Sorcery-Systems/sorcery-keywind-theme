@@ -1,19 +1,19 @@
 <#macro kw color="" component="a" size="" rest...>
   <#switch color>
     <#case "primary">
-      <#assign colorClass="text-primary-600 hover:text-primary-500">
+      <#assign colorClass="text-primary hover:text-primaryLighter">
       <#break>
     <#case "secondary">
-      <#assign colorClass="text-secondary-600 hover:text-secondary-900">
+      <#assign colorClass="text-secondary hover:text-secondaryDarker">
       <#break>  
     <#case "secondary-light">
-      <#assign colorClass="text-secondary-600 hover:text-secondary-900">
+      <#assign colorClass="text-secondary hover:text-secondaryDarker">
       <#break>
     <#case "secondary-dark">
-      <#assign colorClass="text-secondary-300 hover:text-secondary-100">
+      <#assign colorClass="text-secondaryLighter hover:text-secondaryVeryLight">
       <#break>
     <#default>
-      <#assign colorClass="text-primary-600 hover:text-primary-500">
+      <#assign colorClass="text-primary hover:text-primaryLighter">
   </#switch>
 
   <#switch size>
